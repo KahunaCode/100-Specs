@@ -847,6 +847,12 @@ Scientist.prototype.addDiscovery = function(str){
  *
  */
 
+// function BankAccount(balance, owner){
+//   this.balance = balance;
+//   this.owner = owner;
+// }
+
+// BankAccount.prototype.withdraw = function()
 
 /* Step 37
  *
@@ -1020,6 +1026,13 @@ Scientist.prototype.addDiscovery = function(str){
  * @param {string} gender  male or female
  */
 
+class Animal {
+  constructor(species, gender){
+    this.species = species;
+    this.gender = gender;
+  }
+}
+
 
 /**
  * Step 51
@@ -1029,6 +1042,12 @@ Scientist.prototype.addDiscovery = function(str){
  * @param {string} model The vehicle's model
  */
 
+class Vehicle {
+  constructor(make, model){
+    this.make = make;
+    this.model = model;
+  }
+}
 
 /**
  * Step 52
@@ -1040,6 +1059,16 @@ Scientist.prototype.addDiscovery = function(str){
  *
  */
 
+class Shape {
+  constructor(sides){
+    if (sides >= 3){
+      this.sides = sides;
+    }
+    else {
+      this.sides = null;
+    }
+  }
+}
 
 /**
  * Step 53
