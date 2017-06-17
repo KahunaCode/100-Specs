@@ -379,6 +379,15 @@ var scmList = ["git","svn","mercurial","bazaar","cvs"];
  *
  */
 
+function browseURL(browser){
+  if (browser in browsers){
+    return browsers[browser];
+  }
+  else {
+    return false;
+  }
+}
+
 
 /* Step 25
  *
@@ -389,6 +398,20 @@ var scmList = ["git","svn","mercurial","bazaar","cvs"];
  * @return {String}
  *
  */
+
+//var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family","Genus","Species"];
+
+
+ function listLivingOrgClass () {
+  var temp = "<ul>";
+  for (var i = 0; i < livingOrganismClassification.length; i++) {
+    temp += "<li>";
+    temp += livingOrganismClassification[i];
+    temp += "</li>";
+    }
+  temp += "</ul>";
+  return temp;
+ }
 
 
 /* Step 26
