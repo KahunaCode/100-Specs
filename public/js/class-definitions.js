@@ -522,6 +522,15 @@ function browseURL(browser){
  *
  */
 
+ function canTalkAbout(club){
+  if (club === club_name){
+    return false;
+  }
+  else {
+    return true;
+  }
+ }
+
 
 /* Step 30
  *
@@ -543,6 +552,14 @@ function browseURL(browser){
  *   write
  *
  */
+
+ function Pen(color){
+  this.color = color;
+ }
+
+ Pen.prototype.write = function(msg){
+  return `${this.color}: ${msg}`
+ }
 
 
 /* Step 31
@@ -572,6 +589,23 @@ function browseURL(browser){
  *
  */
 
+function Garden(plantsTotal){
+  this.plantsTotal = plantsTotal;
+  this.isWatered = false;
+}
+
+Garden.prototype.water = function(){
+  this.isWatered = true;
+};
+
+Garden.prototype.grow = function(){
+  if (this.isWatered === false){
+    return false;
+  }
+  else {
+    this.plantsTotal += 1;
+  }
+};
 
 /* Step 32
  *
