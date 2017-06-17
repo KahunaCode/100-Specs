@@ -179,6 +179,8 @@ var rainbow = {colors:{red   : "#F0280A",
  *
  */
 
+ var linuxFlavors = ["Gentoo","Fedora","Debian","Slackware","Red Hat","Bieber Linux"];
+
 
 /* Step 15
  *
@@ -193,6 +195,8 @@ var rainbow = {colors:{red   : "#F0280A",
  *
  */
 
+ var DNA = ["nucleatides","guanine","adenine","thymine","cytosine"];
+
 
 /* Step 16
  *
@@ -205,6 +209,13 @@ var rainbow = {colors:{red   : "#F0280A",
  * Surface      => 320
  *
  */
+
+ var laptopCosts = {
+    MacBook:1500,
+    Alienware:2500,
+    HP:499,
+    Surface:320
+  };
 
 
 /* Step 17
@@ -222,6 +233,7 @@ var rainbow = {colors:{red   : "#F0280A",
  *
  */
 
+var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family","Genus","Species"];
 
 /* Step 18
  *
