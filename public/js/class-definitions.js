@@ -352,6 +352,20 @@ var scmList = ["git","svn","mercurial","bazaar","cvs"];
  *
  */
 
+ function drink(beerType){
+  if (beerType in beers){
+    if (typeof beers[beerType] === "string"){
+      return `This ${beerType} is ${beers[beerType]}.`;
+      }
+      else{
+        return `This ${beerType} is ${beers[beerType][0]} and ${beers[beerType][1]}.`;
+      }
+  }
+  else{
+    return false;
+  }
+ }
+
 
 /* Step 24
  *
