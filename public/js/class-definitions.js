@@ -104,6 +104,8 @@ var club_name = "Fight Club";
  *
  */
 
+ var princess_leia = {name: "Leia Organa", money: 890, age: 20, gender: gender.female};
+
 
 /* Step 11
  *
@@ -117,6 +119,8 @@ var club_name = "Fight Club";
  *
  */
 
+var domains = {"ycombinator.com": "198.41.190.47", "laughingsquid.com": "162.159.247.97",
+   "slumlordhosting.com": "198.61.179.126", "jsonformatter.curiousconcept.com": "104.28.5.70"};
 
 /* Step 12
  *
@@ -132,6 +136,8 @@ var club_name = "Fight Club";
  *
  */
 
+var browsers = {Chromium: "google.com", Safari: "apple.com", Opera: "opera.com", Firefox: "mozilla.org",
+  Sleipnir: "fenrir-inc.com", Konqueror: "konqueror.org"};
 
 /* Step 13
  *
@@ -150,6 +156,14 @@ var club_name = "Fight Club";
  *
  */
 
+var rainbow = {colors:{red   : "#F0280A",
+               orange: "#FF8800",
+               yellow: "#FFDD00",
+               green : "#51AB0C",
+               blue  : "#1593ED",
+               indigo: "#5215ED",
+               violet: "#A915ED"},
+               isDouble: true};
 
 /* Step 14
  *
