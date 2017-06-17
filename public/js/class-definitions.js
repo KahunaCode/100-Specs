@@ -248,6 +248,8 @@ var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family",
  *
  */
 
+var scmList = ["git","svn","mercurial","bazaar","cvs"];
+
 
 /* Step 19
  *
@@ -267,6 +269,15 @@ var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family",
  *
  */
 
+ var beers = {
+  IPA: "Ale",
+  Lager: "Strong",
+  Heffeweisen: "German",
+  Stout: ["Thick", "Dark"],
+  Porter: "Bitter",
+  Ale: ["Light", "Golden"]
+ };
+
 
 /* Step 20
  *
@@ -276,6 +287,10 @@ var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family",
  * @return {String}
  *
  */
+
+ function sahara_river() {
+  return "Nile River";
+ }
 
 
 /* Step 21
@@ -289,6 +304,10 @@ var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family",
  *
  */
 
+ function addNumbers(num, num2){
+  return num+num2;
+ }
+
 
 /* Step 22
  *
@@ -301,6 +320,18 @@ var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family",
  * @return {Bool}
  *
  */
+
+  //var linuxFlavors = ["Gentoo","Fedora","Debian","Slackware","Red Hat","Bieber Linux"];
+
+
+ function installLinux(linux){
+  if (linuxFlavors.includes(linux)){
+    return true;
+  }
+  else{
+    return false;
+  }
+ }
 
 
 /* Step 23
