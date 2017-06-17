@@ -499,6 +499,16 @@ function browseURL(browser){
  *
  */
 
+ function purchaseLaptop(laptop){
+  if (laptop in laptopCosts){
+    return laptopCosts[laptop].toString();
+  }
+  else{
+    return -1;
+  }
+ }
+
+
 
 /* Step 29
  *
