@@ -1078,6 +1078,13 @@ class Shape {
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
+ class Box {
+  constructor(contents, isOpen){
+    this.contents = contents;
+    this.isOpen = isOpen;
+  }
+ }
+
 
 /**
  * Step 54
@@ -1086,6 +1093,11 @@ class Shape {
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
+class Door {
+  constructor(isOpen){
+    this.isOpen = isOpen;
+  }
+}
 
 /**
  * Step 55
@@ -1095,6 +1107,12 @@ class Shape {
  * @param {string} color The shoe color
  */
 
+class Shoe {
+  constructor(size, color){
+    this.size = size;
+    this.color = color;
+  }
+}
 
 /**
  * Step 56
@@ -1102,6 +1120,13 @@ class Shape {
  * House class
  * @param {number} stories How many stories tall the house is
  */
+
+ class House {
+  constructor(stories){
+    this.stories = stories;
+  }
+}
+
 
 
 /**
