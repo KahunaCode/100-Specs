@@ -434,6 +434,19 @@ function browseURL(browser){
  *
  */
 
+ //var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+
+
+ function favoritePlanet(curr){
+  if (!planets.includes(curr)) {
+    return `${curr} is not a planet!`;
+  }
+  else {
+    var newPlanet = planets[Math.floor(Math.random() * planets.length)];
+    return `I'm from ${curr}, but I wish I could go to ${newPlanet}`;
+  }
+ }
+
 
 /* Step 27
  *
@@ -457,6 +470,21 @@ function browseURL(browser){
  *   earnMoney
  *
  */
+
+ class Person{
+  constructor(name, money, age, gender){
+    this.name = name;
+    this.money = money;
+    this.age = age;
+    this.gender = gender;
+  }
+  spendMoney(amt){
+    this.money -= amt;
+  }
+  earnMoney(amt){
+    this.money += amt;
+  }
+ }
 
 
 /* Step 28
