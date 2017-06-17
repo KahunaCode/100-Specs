@@ -471,20 +471,36 @@ function browseURL(browser){
  *
  */
 
- class Person{
-  constructor(name, money, age, gender){
-    this.name = name;
-    this.money = money;
-    this.age = age;
-    this.gender = gender;
-  }
-  spendMoney(amt){
-    this.money -= amt;
-  }
-  earnMoney(amt){
-    this.money += amt;
-  }
- }
+ // class Person{
+ //  constructor(name, money, age, gender){
+ //    this.name = name;
+ //    this.money = money;
+ //    this.age = age;
+ //    this.gender = gender;
+ //  }
+ //  spendMoney(amt){
+ //    this.money -= amt;
+ //  }
+ //  earnMoney(amt){
+ //    this.money += amt;
+ //  }
+ // }
+
+function Person(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+}
+
+Person.prototype.spendMoney = function(amt){
+  this.money -= amt;
+};
+
+Person.prototype.earnMoney = function(amt){
+  this.money += amt;
+};
+
 
 
 /* Step 28
@@ -624,6 +640,18 @@ Garden.prototype.grow = function(){
  *
  */
 
+function SolarSystem(){
+  this.planets = [];
+}
+
+SolarSystem.prototype.addPlanet = function(planet) {
+  this.planets.push(planet);
+};
+
+SolarSystem.prototype.removePlanet = function(planet){
+  this.planets.splice(this.planets.indexOf(planet), 1);
+};
+
 
 /* Step 33
  *
@@ -657,6 +685,15 @@ Garden.prototype.grow = function(){
  *   marries
  *
  */
+
+function PrincessLeia(name, money, age, gender) {
+  Person.call(this, name, money, age, gender);
+  this.isInTrouble = null;
+}
+
+PrincessLeia.prototype = Object.create(Person.prototype, {
+  constructor: PrincessLeia
+});
 
 
 /* Step 34
