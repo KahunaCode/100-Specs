@@ -1357,6 +1357,10 @@ Shape.prototype.getType = function(){
  *
  */
 
+ Shoe.prototype.findShoes = function(){
+  return `Found ${this.color} shoes of size ${this.size}`;
+ };
+
 
  /* Step 87
  *
@@ -1367,6 +1371,14 @@ Shape.prototype.getType = function(){
  *
  */
 
+House.prototype.isATallStory = function(storiesTooTall){
+  if (this.stories >= storiesTooTall) {
+    return true;
+  }
+  else {
+    return false;
+  }
+};
 
  /* Step 88
  *
@@ -1377,6 +1389,17 @@ Shape.prototype.getType = function(){
  * Return true if isOn is true, false otherwise.
  *
  */
+
+ Lightbulb.prototype.flipSwitch = function(on){
+  if (on === "on") {
+    this.isOn = true;
+    return true;
+  }
+  else {
+    this.isOn = false;
+    return false;
+  }
+ };
 
 
  /* Step 89
