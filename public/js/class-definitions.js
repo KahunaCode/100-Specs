@@ -1291,6 +1291,24 @@ Animal.prototype.isWarmBlooded = function(animal){
  *
  */
 
+Shape.prototype.getType = function(){
+  types = {
+    3:"triangle",
+    4:"quadrilateral",
+    5:"pentagon",
+    6:"hexagon",
+    7:"heptagon",
+    8:"octagon",
+    9:"nonagon",
+    10:"decagon"
+  };
+  if (types[this.sides]){
+    return types[this.sides];
+  }
+  else{
+    return `Could not determine type`;
+  }
+};
 
 /* Step 84
  *
@@ -1301,6 +1319,16 @@ Animal.prototype.isWarmBlooded = function(animal){
  *
  */
 
+ Box.prototype.openBox = function(){
+  if (this.isOpen === false) {
+    this.isOpen = true;
+    return true;
+  }
+  if (this.isOpen === true){
+    return false;
+  }
+ };
+
 
  /* Step 85
  *
@@ -1309,6 +1337,17 @@ Animal.prototype.isWarmBlooded = function(animal){
  * Return true if openClose opens the door, false if openClose closes the door.
  *
  */
+
+ Door.prototype.openClose = function(){
+  if (this.isOpen === false) {
+    this.isOpen = true;
+    return true;
+  }
+  if (this.isOpen === true) {
+    this.isOpen = false;
+    return false;
+  }
+ };
 
 
 /* Step 86
