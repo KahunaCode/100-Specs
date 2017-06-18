@@ -1194,28 +1194,28 @@ var catBox = new Box(Cat, true);
 var christmasPresent = new Box("neat", false);
 
 // Create 2 doors
-var automaticDoor;
-var bankVault;
+var automaticDoor = new Door(true);
+var bankVault = new Door(false);
 
 // Create 2 shoes
-var rubySlippers;
-var dressShoes;
+var rubySlippers = new Shoe(7, "red");
+var dressShoes= new Shoe(10, "black");
 
 // Create 2 houses
-var singleStory;
-var twoStory;
+var singleStory = new House(1);
+var twoStory = new House(2);
 
 // Create 2 lightbulbs
-var incandescent;
-var halogen;
+var incandescent = new Lightbulb(true);
+var halogen = new Lightbulb(false);
 
 // Create 2 cookies of different flavors
-var chocolateChip;
-var gingerbread;
+var chocolateChip = new Cookie("chocolate");
+var gingerbread = new Cookie("gingerbread");
 
 // Create 2 different meals
-var breakfast;
-var dinner;
+var breakfast = new Meal(["cereal", "milk"]);
+var dinner = new Meal(["fish", "vegetables"]);
 
 
  /* Steps 81 to 90
