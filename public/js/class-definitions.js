@@ -1481,8 +1481,8 @@ var forwardDriving = forte.drive();
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var decagon = new Shape(10).getType();
+var polygon = new Shape().getType();
 
 
 /* Step 94
@@ -1491,8 +1491,8 @@ var polygon;
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+var openAClosedBox = new Box("stuff", false).openBox();
+var closeAnOpenBox = new Box("other", true).openBox();
 
 
  /* Step 95
@@ -1501,8 +1501,8 @@ var closeAnOpenBox;
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
+var openAClosedDoor = new Door(false).openClose();
+var closeAnOpenDoor = new Door(true).openClose();
 
 
 /* Step 96
