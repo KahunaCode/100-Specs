@@ -1410,6 +1410,14 @@ House.prototype.isATallStory = function(storiesTooTall){
  *
  */
 
+Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
+  if (this.flavor === "chocolate" && dayOfTheWeek === "Monday") {
+    return true;
+  }
+  else {
+    return false;
+  }
+};
 
  /* Step 90
  *
@@ -1425,6 +1433,16 @@ House.prototype.isATallStory = function(storiesTooTall){
  *
  */
 
+Meal.prototype.containsJunkFood = function(){
+  var junkFood = ["chips", "soda", "ice cream", "popcorn", "candy"];
+  for (var i = 0; i < this.foods.length; i++){
+    if (junkFood.indexOf(this.foods[i]) > -1){
+      //console.log(this.foods[i]);
+      return true;
+    }
+  }
+  return false;
+};
 
  /* Steps 91 to 100
  *
@@ -1439,9 +1457,12 @@ House.prototype.isATallStory = function(storiesTooTall){
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+var warmBloodedAnimal = george.isWarmBlooded();
+var coldBloodedAnimal = nemo.isWarmBlooded();
+
+var shark = new Animal("Shark", "male");
+var notWarmOrColdAnimal = shark.isWarmBlooded();
+
 
 
 /* Step 92
@@ -1450,8 +1471,8 @@ var notWarmOrColdAnimal;
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = civic.drive("Kam hwy");
+var forwardDriving = forte.drive();
 
 
  /* Step 93
